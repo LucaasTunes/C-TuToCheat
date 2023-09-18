@@ -9,11 +9,12 @@ public class EnemyAI : MonoBehaviour
     int speed = 300;
     string x = "xis";
     bool isDead = false;
-
+ EnemyWeapon weapon
     // Função de ataque
     void Attack()
     {
         // Implemente a lógica de ataque aqui
+        weapon.shoot()
     }
 
     // Função de movimento
@@ -38,16 +39,25 @@ public class EnemyAI : MonoBehaviour
         intList.Remove(1);
     }
     
-void Movimento{
+void MovimentoEx{
     foreach (int intNumbers in intList)
     {
         
     }
     for (int i = 0; i < intArray.length; i++)
     {
-        
+        int currentNumber = intArray[i]
     }
-    //não existe length dentro do intList (Count)
+    //não existe length dentro do intList usa (Count)
 }
 }
+public class EnemyWeapon
+{
+    public float damage;
+        public float FireRate;
+// Escopo global com public
+    void Shoot()
+    {
 
+    }
+}
